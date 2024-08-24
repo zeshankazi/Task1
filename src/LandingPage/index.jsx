@@ -8,25 +8,25 @@ const LandingPage = () => {
   return (
     <div  className="max-w-screen-md min-h-screen m-auto grid  grid-cols-[1fr_30px] sm:grid-cols-[250px_1fr_40px]"
     style={{
-      backgroundImage: `url('./src/assets/background.png')`,
+      backgroundImage: `url(${import.meta.env.BASE_URL}/images/background.png)`,
       backgroundSize: 'cover',
       backgroundPosition: 'center',
     }}
     >
-<div className=' items-end max-h-32 hidden sm:flex '> 
+<div className=' items-end max-h-[15%] hidden sm:flex '> 
  
   <DottedGrid/>
  
 </div>
 <div className='flex flex-col '>
-  <div className='flex items-end min-h-32 w-full justify-center sm:w-auto sm:justify-start'>
+  <div className='flex items-end min-h-[15%] w-full justify-center sm:w-auto sm:justify-start'>
   <HeaderComponent/>
   </div>
 
 <div className='flex flex-grow items-center w-full justify-center sm:w-auto sm:justify-start '>
 <AuthorsComponent/>
 </div>
-<div className='flex items-start min-h-32 w-full justify-center sm:w-auto sm:justify-start'>
+<div className='flex items-start min-h-[15%] w-full justify-center sm:w-auto sm:justify-start'>
 <FooterComponent/>
 </div>
 </div>

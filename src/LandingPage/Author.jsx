@@ -2,7 +2,7 @@ import React from 'react';
 
 
 const Profiles = ({data}) => {
-  const imgSrc = `./src/assets/${data?.img}`
+  const imgSrc = `${import.meta.env.BASE_URL}/images/${data?.img}`
   return (
     <div className="m-2">
           <div className="relative w-16 h-16 sm:w-24 sm:h-24">
@@ -25,17 +25,17 @@ const AuthorsComponent = () => {
   const authors = [{
     id:"1",
     fname:'Stephen',
-    lName:'Bowman',
+    lName:'Broan',
     img:'1st.jpg'
   },
   {
     fname:'Anna',
-    lName:'Fitzgibbon',
+    lName:'Firdousi',
     img:'2nd.jpg'
   },
   {
-    fname:'Gordom',
-    lName:'Shaw',
+    fname:'Gordon',
+    lName:'Shah',
     img:'3rd.jpg'
   }
 

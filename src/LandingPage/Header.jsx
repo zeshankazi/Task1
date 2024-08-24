@@ -11,7 +11,7 @@ const HeaderComponent = () => {
 
 
 <div >
-<img src="./src/assets/logo.webp"/>
+<img src={`${import.meta.env.BASE_URL}/images/logo.webp`}/>
 </div>
 
   );
